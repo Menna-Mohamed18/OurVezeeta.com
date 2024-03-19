@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--search-->
+    <title>home</title>
+      <style>
+        .main-content {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+        
+        #overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: none;
+          z-index: 9999;
+        }
+        
+        #overlay .modal {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .modal-content {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        </style>
+</head>
+<body >
+    <div class="header">
+        <a href="index.html" title="Book The Best Doctors in Egypt"> <img src="imges/vezeta.png" alt="vezeeta" class="h_img" width="150px" height="50px" ></a>
+        <ol class="ol1">
+            <li class="li1"><a href="sign-up.html"><button>sign up</button></a></li>
+            <li><a href="login.html">login </a></li>
+            <li><a href="contact.html">contact us </a></li>
+            <!-- <p><a href="modal.html" id="openModal">Open Modal</a></p> -->
+            <li><a href="../model.html" id="openModal" class="main-content">vezeeta for doctor </a></li>
+            <div id="overlay">
+                <div class="modal">
+                    <h4 style="background-color: rgb(0, 112, 205);color: white;text-align: center;width: 400px;margin-top: -10px;border-radius: 5px 5px 0 0px;height: 26px;padding-top: 4px;">Choose Your Clinic Type</h4><br>
+                    <a href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl" target="_blank"><img src="imges/google-play-badge.jpeg" alt=""></a>
+                    <!-- <img src="imges/app-store-badge.jpeg" alt=""> -->
+                    <a href="https://apps.apple.com/eg/app/vezeeta-doctors-pharmacy/id1010281314" target="_blank"><img src="imges/app-store-badge.jpeg" alt="" style="padding-left: 135px;"></a><br><br>
+                  <p style="text-align: center;"><a href="#" id="closeModal" style="font-weight: bold;color: rgb(0, 112, 205);">Close window</a></p>
+                </div>
+            </div>
+            <script>
+                // JavaScript code to handle opening and closing modal
+                document.getElementById("openModal").addEventListener("click", function(event) {
+                  event.preventDefault();
+                  document.getElementById("overlay").style.display = "block";
+                });
+            
+                document.getElementById("closeModal").addEventListener("click", function(event) {
+                  event.preventDefault();
+                  document.getElementById("overlay").style.display = "none";
+                });
+              </script>
+            <li><select class="select" >
+                <option >Egypt</option>
+                <option> <img src="imges/saudi-arabia.png" alt=""> Saudi Arabia</option>
+                <option> <img src="imges/jordan.png" alt=""> Jordan</option>
+                <option><img src="imges/leb.png" alt=""> labanon</option>
+                <option><img src="imges/nigeria.png" alt=""> Nigeria</option>
+            </select></li>
+        </ol>
+    </div>
+    <div class="better">
+        <div class="image"><img src="imges/medical-health.webp" alt=""></div>
+        <div class="con">
+            <h1>Better Healthcare for a Better Life</h1><br>
+            <p>Book online or call 16676</p>
+        </div>
+        <!-- <div class="box"></div> -->
+        <div class="box">
+            <div><span style="padding-left: 10px; color:rgb(0,0,0,0.7);">Select a Speciality</span><br><br>
+             <!-- <span style="color: rgb(0, 112, 205);padding-left: 15px;">Dermatolgy(skin)</span> -->
+             <a href="doctors.html"><span style="color: rgb(0, 112, 205);padding-left: 15px;">Dermatolgy(skin)</span></a>
+            </div>
+            <div> <span style="padding-left: 10px; color:rgb(0,0,0,0.7);">In this city</span><br><br>
+              <!-- <span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose city</span> -->
+              <a href="doctors.html"><span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose city</span></a>
+             </div>
+            <div><span style="padding-left: 10px; color:rgb(0,0,0,0.7);">In this area</span><br><br>
+              <!-- <span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose area</span> -->
+              <a href="doctors.html"><span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose area</span></a>
+            </div>  
+            <div> <span style="padding-left: 10px; color:rgb(0,0,0,0.7);">My insurance is</span><br><br>
+              <!-- <span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose insurance</span> -->\
+              <a href="doctors.html"><span style="color: rgb(0, 112, 205);padding-left: 15px;">Choose insurance</span></a>
+            </div>
+            <div><span style="padding-left: 10px; color:rgb(0,0,0,0.7);">Or Search by name</span><br><br>
+              <!-- <span style="color: rgb(0, 112, 205);padding-left: 15px;">Doctor name or hospital</span> -->
+              <a href="doctors.html"><span style="color: rgb(0, 112, 205);padding-left: 15px;">Doctor name or hospital</span></a>
+            </div>
+            <div style="background-color: red;color: white; border-radius: 0 10px 10px 0;">
+              <span class="material-symbols-outlined" style="font-size: 40px; padding-left: 5px;" >search</span> 
+             <span style="font-size: 25px; background-color:red; padding-left: 20px;padding-top: -30px;">Search</span>
+            </div>
+          </div>
+        
+        
+    </div>
+    <!-- -------------------------------------------------------------------------------------- -->
+    <div class="sec2">
+        <div class="continer">
+            <h1>new service for better healthcara</h1>
+            <div class="north">
+                <div class="img-north">
+                    <img src="imges/Happy-Life.jpeg" alt="">
+                </div>
+                <div class="p-north">
+                    <h2>north</h2>
+                    <p>North, your way to practice peace.</p>
+                </div>
+                <div class="a-north">
+                    <a href="north.html"><button>Explore North</button></a>
+                </div>
+            </div>
+            <div class="qus">
+                <div class="c-qus">
+                    <h2>hava a medical question ?</h2>
+                    <p>submit your medical question receive an answer a spacialized doctor</p>
+                    <a href=""><button>Ask Now</button></a>
+                </div>
+            </div>
+            <div class="phar">
+                <div class="c-phar">
+                    <h2>pharmacy</h2>
+                    <p>get your medical and all your pharmacy needs</p>
+                    <a href="pharmacy.html"><button>place order</button></a>
+                </div>
+                <div class="img-phar">
+                    <img src="imges/Capture.PNG" alt="">
+                </div>
+            </div>
+            <div class="tele">
+                <div class="divs">
+                    <div class="img-tele">
+                        <img src="imges/dr-telemedicine.jpg" alt="">
+                    </div>
+                    <div class="c-tele">
+                        <h4>teleconsutation</h4>
+                        <p>schedule a voice or video call with a specialized doctor.</p>
+                        <a href="doctors.html">book a call</a>
+                    </div>
+                </div>
+                <div class="divs">
+                    <div class="img-tele">
+                        <img src="imges/mal.webp" alt="">
+                    </div>
+                    <div class="c-tele">
+                        <h4>home visit</h4>
+                        <p>choose the speciality,and the doctor will visit you at home.</p>
+                        <a href="doctors.html">book a visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <div class="spacial">
+        <div class="continer">
+            <h1>Book from top specialties</h1>
+            <a href="doctors.html">
+                <div class="c-spacial">
+                    <img src="imges/desktop.jpeg" alt="">
+                    <h3>skin</h3>
+                </div>
+            </a>
+            <a href="doctors.html">
+                <div class="c-spacial">
+                    <img src="imges/desktop (1).jpeg" alt="">
+                    <h3>teeth</h3>
+                </div>
+            </a>
+            <a href="doctors.html">
+                <div class="c-spacial">
+                    <img src="imges/desktop (2).jpeg" alt="">
+                    <h3>mental& emotional</h3>
+                </div>
+            </a>
+            <a href="doctors.html">
+                <div class="c-spacial">
+                    <img src="imges/desktop (3).jpeg" alt="">
+                    <h3>child</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  ----------------------------------------------------------- -->
+    <div class="data">
+        <div class="continer d-continer">
+            <div class="d_div">
+                <div class="icons">
+                    <i class="fas fa-hand-holding-heart icon1"></i>
+                    <i class="fas fa-grip-lines icon2"></i>
+                </div>
+                <h3>all your healthcara needs</h3>
+                <p>Search and book a clinic visit, home visit, or a teleconsultation. Order your medicine and book a service or operation.</p>
+            </div>
+            <div class="d_div">
+                <div class="icons">
+                    <i class="fas fa-user-injured icon1"></i>
+                    <i class="fas fa-grip-lines icon2"></i>
+                </div>
+                <h3>Verified patient reviews</h3>
+                <p>Doctor ratings are from patients who booked and visited the doctor through Vezeeta.</p>
+            </div>
+            <div class="d_div">
+                <div class="icons">
+                    <i class="far fa-check-square icon1"></i>
+                    <i class="fas fa-grip-lines icon2"></i>
+                </div>
+                <h3>Your booking is confirmed</h3>
+                <p>Your booking is automatically confirmed, as the doctor specifies his working hours and is notified of the booking details.</p>
+            </div>
+            <div class="d_div">
+                <div class="icons">
+                    <i class="fas fa-clinic-medical icon1"></i>
+                    <i class="fas fa-grip-lines icon2"></i>
+                </div>
+                <h3>Book for free, and pay in the clinic</h3>
+                <p>The consultation fees stated on Vezeeta are the actual doctor's fees with no extra charges.</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="continer continer0">
+        <div class="Download">
+            <h2>Download Vezeeta Application</h2>
+            <p>Search, compare and book doctor consultations with ease. Order your medicines & get them deilvered within 60 minutes. Track your steps count & earn points on hitting the daily goal </p>
+            <!-- <img src="imges/google-play-badge.jpeg" alt=""> -->
+            <a href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl"><img src="imges/google-play-badge.jpeg" alt=""> </a>
+            <!-- <img src="imges/app-store-badge.jpeg" alt=""> -->
+            <a href="https://apps.apple.com/eg/app/vezeeta-doctors-pharmacy/id1010281314"><img src="imges/app-store-badge.jpeg" alt=""></a>
+
+        </div>
+        <div class="Download1">
+            <img src="imges/en.jpeg" alt="">
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="booking">
+        <div class="continer b-continer" >
+            <div class="b_div">
+                <h4>Choose and book from top specialties</h4>
+                <a href="doctors.html">dermatologist</a>
+                <a href="doctors.html">dentist</a>
+                <a href="doctors.html">psychiatrist</a>
+                <a href="doctors.html">neurologist</a>
+                <a href="doctors.html">orthopedist</a>
+                <a href="doctors.html">gynecologist</a>
+                <a href="doctors.html">ENT doctor</a>
+                <a href="doctors.html">cardiologist</a>
+                <a href="doctors.html">view more</a>
+            </div>
+            <div class="b_div">
+                <h4>Choose and book from top cities</h4>
+                <a href="doctors.html">cairo</a>
+                <a href="doctors.html">giza</a>
+                <a href="doctors.html">alexandria</a>
+                <a href="doctors.html">north coast</a>
+                <a href="doctors.html">gharbia</a>
+                <a href="doctors.html">qalyubia</a>
+                <a href="doctors.html">menoufia</a>
+                <a href="doctors.html">fayoum</a>
+                <a href="doctors.html">el-Dakahlia</a>
+                <a href="doctors.html">view more</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="continer f-continer">
+            <div class="c_div">
+                <img src="imges/vezeta.png" alt="vezeeta" width="150px" height="50px" >
+                <ol>
+                    <li><a href="aboutUs.html">about us</a></li>
+                    <li><a href="OurTeam.html">our team</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="press.html">press</a></li>
+                </ol>
+            </div>
+            <div class="c_div">
+                <h3>secrced by</h3>
+                <ol>
+                    <li><a href="search.html">speciality</a></li>
+                    <li><a href="search.html">area</a></li>
+                    <li><a href="search.html">insurance</a></li>
+                    <li><a href="search.html">hospital</a></li>
+                    <li><a href="search.html">center</a></li>
+                </ol>
+            </div>
+            <div class="c_div">
+                <h3>are you a doctor?</h3>
+                <ol>
+                    <li><a href="join.html">join vezeeta doctor</a></li>
+                </ol>
+            </div>
+            
+            <div class="c_div">
+                <h3>need help?</h3>
+                <ol>
+                    <li><a href="medicalLib.html">medical library</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="termsOfUs.html">terms of use</a></li>
+                    <li><a href="privacy.html">privacy policy</a></li>
+                    <li><a href="docPrivacy.html">doctor privacy policy</a></li>
+                </ol>
+            </div>
+            <div class="c_div">
+                <div class="f-icons">
+                   <!-- <img src="imges/google-play-badge.jpeg" alt=""> -->
+                   <a href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl" target="_blank"><img src="imges/google-play-badge.jpeg" alt=""></a>
+                   <!-- <img src="imges/app-store-badge.jpeg" alt=""> -->
+                   <a href="https://apps.apple.com/eg/app/vezeeta-doctors-pharmacy/id1010281314" target="_blank"><img src="imges/app-store-badge.jpeg" alt=""></a>
+                   <!-- <i class="fab fa-facebook-square"></i> -->
+                   <a href="https://www.facebook.com/Vezeeta/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                   <!-- <i class="fab fa-instagram"></i> -->
+                   <a href="https://www.instagram.com/vezeeta" target="_blank"><i class="fab fa-instagram"></i></a>
+                   <!-- <i class="fab fa-twitter"></i> -->
+                   <a href="https://twitter.com/VEZEETA_Egypt" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div> 
+        </div>
+    </footer>
+
+    
+</body>
+</html>
